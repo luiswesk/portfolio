@@ -100,9 +100,11 @@ section+section{border-top:1px solid var(--line)}
 .piece:hover .badge{color:var(--clay)}
 .p-title{font-size:15px;margin:14px 0 5px;line-height:1.25;font-family:var(--display);font-weight:600;letter-spacing:-.015em}
 .p-meta{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.08em;margin:0 0 10px;text-transform:uppercase}
-.tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--teal);text-transform:uppercase}
 .tag+.tag::before{content:'· ';color:var(--line-2)}
+.ext-link, .expand-btn{position:absolute;top:10px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:rgba(22,22,22,.6);backdrop-filter:blur(4px);color:var(--text);border-radius:50%;text-decoration:none;font-size:13px;transition:.2s;z-index:2;border:1px solid var(--line);cursor:pointer;padding:0}
+.ext-link{left:10px}
+.expand-btn{left:48px;font-size:15px;line-height:1}
+.ext-link:hover, .expand-btn:hover{background:var(--text);color:var(--bg)}
 
 
 .projs{display:grid;gap:80px}
@@ -259,67 +261,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       </button>
 
       <p class="sub-lbl">Peças sociais</p>
-      <div class="grid-v">
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/p/DYH0a2dJvOB/" data-n="Renascimento do Brasil" data-c="Apex Partners · 2026">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">Renascimento do Brasil</p><p class="p-meta">Apex Partners · 2026</p>
-          <div class="tags"><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">color</span><span class="tag">áudio</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/p/C77DExWumgV/" data-n="Gusttavo Lima, Ana Castela e o agro" data-c="Ricardo Frizera · 2024">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">Gusttavo Lima, Ana Castela e o agro</p><p class="p-meta">Ricardo Frizera · 2024</p>
-          <div class="tags"><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">color</span><span class="tag">áudio</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/reel/C5eeASYvbB2/" data-n="A capital do jeans é capixaba!" data-c="Ricardo Frizera · 2024">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">A capital do jeans é capixaba!</p><p class="p-meta">Ricardo Frizera · 2024</p>
-          <div class="tags"><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">color</span><span class="tag">áudio</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/p/DbjbwnaoUfD/" data-n="A maior ciclovia urbana do Brasil" data-c="Ricardo Frizera · 2026">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">A maior ciclovia urbana do Brasil</p><p class="p-meta">Ricardo Frizera · 2026</p>
-          <div class="tags"><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">color</span><span class="tag">áudio</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/p/C5MQ0aLvAeF/" data-n="Você viu a bioluminescência em Vitória?" data-c="Ricardo Frizera · 2024">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">Você viu a bioluminescência em Vitória?</p><p class="p-meta">Ricardo Frizera · 2024</p>
-          <div class="tags"><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">color</span><span class="tag">áudio</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/reel/DbROwnuPvei/" data-n="O que são grãos sonoros?" data-c="Criamus · 2026">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">O que são grãos sonoros?</p><p class="p-meta">Criamus · 2026</p>
-          <div class="tags"><span class="tag">roteiro</span><span class="tag">captação</span><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">trilha</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/reel/DXCsOewib8X/" data-n="Envelope ADSR" data-c="Criamus · 2026">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">Envelope ADSR</p><p class="p-meta">Criamus · 2026</p>
-          <div class="tags"><span class="tag">roteiro</span><span class="tag">captação</span><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">trilha</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/reel/DVohYb-gAz6/" data-n="O que é o som?" data-c="Criamus · 2026">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">O que é o som?</p><p class="p-meta">Criamus · 2026</p>
-          <div class="tags"><span class="tag">roteiro</span><span class="tag">captação</span><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">trilha</span></div>
-        </button>
-        <button class="piece" data-t="ig" data-u="https://www.instagram.com/reel/DV6Un6YgNCl/" data-n="O que é o timbre?" data-c="Criamus · 2026">
-          <div class="thumb v"><em>THUMB 9:16</em><span class="badge">INSTAGRAM</span></div>
-          <p class="p-title">O que é o timbre?</p><p class="p-meta">Criamus · 2026</p>
-          <div class="tags"><span class="tag">roteiro</span><span class="tag">captação</span><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">trilha</span></div>
-        </button>
-      </div>
+      <div class="grid-v" id="grid-ig"></div>
 
       <p class="sub-lbl">Vídeos longos</p>
-      <div class="grid-h">
-        <button class="piece" data-t="yt" data-u="2gowtg8B0Nw" data-n="Os pioneiros da música eletrônica" data-c="Criamus · 2025">
-          <div class="thumb h"><em>THUMB 16:9</em><span class="badge">YOUTUBE</span></div>
-          <p class="p-title">Os pioneiros da música eletrônica</p><p class="p-meta">Criamus · 2025</p>
-          <div class="tags"><span class="tag">roteiro</span><span class="tag">captação</span><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">trilha</span></div>
-        </button>
-        <button class="piece" data-t="yt" data-u="sln_CWYmI2w" data-n="Como funciona a síntese sonora?" data-c="Criamus · 2026">
-          <div class="thumb h"><em>THUMB 16:9</em><span class="badge">YOUTUBE</span></div>
-          <p class="p-title">Como funciona a síntese sonora?</p><p class="p-meta">Criamus · 2026</p>
-          <div class="tags"><span class="tag">roteiro</span><span class="tag">captação</span><span class="tag">montagem</span><span class="tag">motion</span><span class="tag">trilha</span></div>
-        </button>
-      </div>
+      <div class="grid-h" id="grid-yt"></div>
 
     </div>
   </section>
@@ -383,44 +328,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       <h2 class="sec-h">Composição</h2>
       <p class="sec-sub">Obras de concerto, eletroacústica e trilha musical.
 
-      <div class="works">
-        <button class="work" data-t="yt" data-u="kPoIunhD8QY" data-n="Luzes de Plástico" data-c="2026">
-          <div class="frame h"><em>YOUTUBE · 16:9</em></div>
-          <h4>Luzes de Plástico</h4>
-          <p class="w-meta">2026 · Vídeo e Eletrônica</p>
-          <p class="w-prem">Obra sobre a poluição marinha feita com sons de plástico e sons do mar.</p>
-        </button>
-        <button class="work" data-t="yt" data-u="CUfj9GXOoMQ" data-n="Flying Theremin" data-c="2024 · VIX Ensemble">
-          <div class="frame h"><em>YOUTUBE · 16:9</em></div>
-          <h4>Flying Theremin</h4>
-          <p class="w-meta">2024 · VIX Ensemble</p>
-          <p class="w-prem">Festival Escuta Aqui! — 6ª edição, auditório da Fames.</p>
-        </button>
-        <button class="work" data-t="yt" data-u="DXuNfHP-8xM" data-n="Fragmentos" data-c="2024">
-          <div class="frame h"><em>YOUTUBE · 16:9</em></div>
-          <h4>Fragmentos</h4>
-          <p class="w-meta">2024 · Flauta e Sax Alto</p>
-          <p class="w-prem">XXXI Panorama da Música Brasileira Atual — Salão Leopoldo Miguez, UFRJ.</p>
-        </button>
-        <button class="work" data-t="yt" data-u="vLxmWHPzMck" data-n="Tango ao Luar" data-c="2023 · VIX Ensemble">
-          <div class="frame h"><em>YOUTUBE · 16:9</em></div>
-          <h4>Tango ao Luar</h4>
-          <p class="w-meta">2023 · VIX Ensemble</p>
-          <p class="w-prem">Festival Escuta Aqui! — 5ª edição, auditório da Fames.</p>
-        </button>
-        <button class="work" data-t="ig" data-u="https://www.instagram.com/reel/Csj_VNHsgzJ/" data-n="Marinho" data-c="2023 · trilha original">
-          <div class="frame v"><em>INSTAGRAM · 9:16</em></div>
-          <h4>Marinho</h4>
-          <p class="w-meta">2023 · trilha original</p>
-          <p class="w-prem">Documentário sobre o rio Marinho e a memória de seus antigos moradores.</p>
-        </button>
-        <button class="work" data-t="ig" data-u="https://www.instagram.com/p/DUD0JMIDSSh/" data-n="Performance — IV CIPS" data-c="2025 · performance">
-          <div class="frame v"><em>INSTAGRAM · 9:16</em></div>
-          <h4>Performance — IV CIPS</h4>
-          <p class="w-meta">2025 · performance</p>
-          <p class="w-prem">Peças de Henrique Iwao, teatro universitário da UFES.</p>
-        </button>
-      </div>
+      <div class="works" id="grid-mu"></div>
 
       <p class="shows-h">Apresentações</p>
       <div class="show"><span class="d">JUN 2025</span><span>IV Conferência Internacional de Pesquisa em Sonoridades — peças de Henrique Iwao, UFES</span></div>
@@ -519,12 +427,7 @@ const modal=document.getElementById('modal'),mbox=document.getElementById('mbox'
       mmedia=document.getElementById('mmedia'),mtitle=document.getElementById('mtitle'),
       mcli=document.getElementById('mcli'),mlink=document.getElementById('mlink'),
       mnote=document.getElementById('mnote');
-let igLoaded=false,lastFocus=null;
-function loadIG(){
-  if(igLoaded)return;
-  const s=document.createElement('script');s.async=true;s.src='https://www.instagram.com/embed.js';
-  document.body.appendChild(s);igLoaded=true;
-}
+let lastFocus=null;
 function openModal(btn){
   lastFocus=btn;
   const t=btn.dataset.t,u=btn.dataset.u;
@@ -535,12 +438,9 @@ function openModal(btn){
       '?rel=0" title="'+btn.dataset.n+'" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>';
     mlink.style.display='';mlink.href='https://youtu.be/'+u;mlink.textContent='Ver no YouTube ↗';mnote.textContent='';
   }else{
-    mmedia.innerHTML='<blockquote class="instagram-media" data-instgrm-permalink="'+u+
-      '" data-instgrm-version="14" style="margin:0;width:100%;min-width:326px"></blockquote>';
-    mlink.style.display='';mlink.href=u;mlink.textContent='Ver no Instagram ↗';
-    mnote.textContent='embed pode ser bloqueado por proteção de rastreamento';
-    loadIG();
-    setTimeout(()=>{if(window.instgrm)window.instgrm.Embeds.process()},240);
+    mmedia.innerHTML='<video src="'+btn.dataset.video+'" controls autoplay playsinline style="max-height:75vh; max-width:100%; border-radius:4px;"></video>';
+    mlink.style.display='';mlink.href=u;mlink.textContent='Abrir no Instagram ↗';
+    mnote.textContent='';
   }
   modal.classList.add('open');document.body.classList.add('locked');
   document.getElementById('mclose').focus();
@@ -549,7 +449,7 @@ function closeModal(){
   modal.classList.remove('open');document.body.classList.remove('locked');
   mmedia.innerHTML='';if(lastFocus)lastFocus.focus();
 }
-document.querySelectorAll('.piece,.work').forEach(b=>b.addEventListener('click',()=>openModal(b)));
+
 document.querySelector('.reel').addEventListener('click',()=>{
   mtitle.textContent='Reel 2026';mcli.textContent='';mbox.classList.remove('vert');
   mmedia.innerHTML='<div style="padding:80px 24px;font-family:monospace;font-size:11px;color:#6B6B6B;text-align:center">reel ainda não produzido</div>';
@@ -559,6 +459,16 @@ document.querySelector('.reel').addEventListener('click',()=>{
 document.getElementById('mclose').addEventListener('click',closeModal);
 modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
+fetch('videos.json').then(r=>r.json()).then(d=>{
+  const gig=document.getElementById('grid-ig'), gyt=document.getElementById('grid-yt'), gmu=document.getElementById('grid-mu');
+  
+  if(gig&&d.ig) gig.innerHTML=d.ig.map(v=>`<div class="piece" data-t="ig" data-u="${v.u}" data-video="${v.video}" data-n="${v.n}" data-c="${v.c}"><div class="thumb v" style="padding:0;background:transparent;"><a href="${v.u}" target="_blank" class="ext-link" title="Abrir no Instagram" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.piece')); event.stopPropagation();">⛶</button><video src="${v.video}" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;" onclick="event.stopPropagation()"></video></div><p class="p-title">${v.n}</p><p class="p-meta">${v.c}</p><div class="tags">${v.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`).join('');
+  
+  if(gyt&&d.yt) gyt.innerHTML=d.yt.map(v=>`<div class="piece" data-t="yt" data-u="${v.u}" data-n="${v.n}" data-c="${v.c}"><div class="thumb h" style="padding:0;background:transparent;"><a href="https://youtu.be/${v.u}" target="_blank" class="ext-link" title="Abrir no YouTube" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.piece')); event.stopPropagation();">⛶</button><iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe></div><p class="p-title">${v.n}</p><p class="p-meta">${v.c}</p><div class="tags">${v.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`).join('');
+  
+  if(gmu&&d.mu) gmu.innerHTML=d.mu.map(v=>`<div class="work" data-t="${v.t}" data-u="${v.u}" ${v.video?'data-video="'+v.video+'"':''} data-n="${v.n}" data-c="${v.c}"><div class="frame ${v.t==='ig'?'v':'h'}" style="padding:0;background:transparent;"><a href="${v.t==='ig'?v.u:'https://youtu.be/'+v.u}" target="_blank" class="ext-link" title="Abrir link externo" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.work')); event.stopPropagation();">⛶</button>${v.t==='ig'?`<video src="${v.video}" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;" onclick="event.stopPropagation()"></video>`:`<iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe>`}</div><h4>${v.n}</h4><p class="w-meta">${v.c}</p><p class="w-prem">${v.prem}</p></div>`).join('');
+});
 </script>
 </body>
 </html>
