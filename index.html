@@ -90,16 +90,19 @@ section+section{border-top:1px solid var(--line)}
 .grid-v{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-bottom:80px}
 .grid-h{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
 @media(max-width:900px){.grid-v{grid-template-columns:repeat(2,1fr);gap:20px}.grid-h{grid-template-columns:1fr}}
-.piece{display:block;text-align:left;background:none;border:none;padding:0;cursor:pointer;font:inherit;color:inherit;width:100%}
-.thumb{background:var(--surface-2);border:1px solid var(--line);position:relative;display:grid;place-items:center;transition:border-color .25s}
+.piece{display:flex;flex-direction:column;height:100%;text-align:left;background:none;border:none;padding:0;font:inherit;color:inherit;width:100%}
+.p-info{flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.thumb{background:var(--surface-2);border:1px solid var(--line);position:relative;display:grid;place-items:center;transition:border-color .25s;overflow:hidden}
 .thumb.v{aspect-ratio:9/16}
 .thumb.h{aspect-ratio:16/9}
 .thumb>em{font-family:var(--mono);font-size:10px;color:#4F4F4F;letter-spacing:.06em;font-style:normal}
 .piece:hover .thumb{border-color:var(--clay)}
 .badge{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:9px;color:var(--muted);letter-spacing:.08em}
 .piece:hover .badge{color:var(--clay)}
-.p-title{font-size:15px;margin:14px 0 5px;line-height:1.25;font-family:var(--display);font-weight:600;letter-spacing:-.015em}
+.p-title{font-size:15px;margin:14px 0 5px;line-height:1.25;font-family:var(--display);font-weight:600;letter-spacing:-.015em;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.5em}
 .p-meta{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.08em;margin:0 0 10px;text-transform:uppercase}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-family:var(--mono);font-size:9px;letter-spacing:.08em;color:var(--teal);text-transform:uppercase}
 .tag+.tag::before{content:'· ';color:var(--line-2)}
 .ext-link, .expand-btn{position:absolute;top:10px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;background:rgba(22,22,22,.6);backdrop-filter:blur(4px);color:var(--text);border-radius:50%;text-decoration:none;font-size:13px;transition:.2s;z-index:2;border:1px solid var(--line);cursor:pointer;padding:0}
 .ext-link{left:10px}
@@ -136,16 +139,26 @@ section+section{border-top:1px solid var(--line)}
 
 #musica .eyebrow{color:var(--sage)}
 .artist{font-family:var(--mono);font-size:10.5px;color:var(--sage);letter-spacing:.14em;text-transform:uppercase;margin:-52px 0 64px}
-.works{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:72px}
-@media(max-width:900px){.works{grid-template-columns:repeat(2,1fr);gap:20px}}
-@media(max-width:600px){.works{grid-template-columns:1fr}}
-.work{display:block;width:100%;background:none;border:none;padding:0;text-align:left;cursor:pointer;font:inherit;color:inherit}
-.work .frame{background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;transition:border-color .25s;position:relative}
+.works{display:grid;grid-template-columns:repeat(6,1fr);gap:28px;margin-bottom:72px}
+.work{display:flex;flex-direction:column;height:100%;width:100%;background:none;border:none;padding:0;text-align:left;font:inherit;color:inherit}
+.work:nth-of-type(1),.work:nth-of-type(2){grid-column:span 3}
+.work:nth-of-type(3),.work:nth-of-type(4),.work:nth-of-type(5){grid-column:span 2}
+@media(max-width:900px){
+  .works{grid-template-columns:repeat(2,1fr);gap:20px}
+  .work:nth-of-type(1),.work:nth-of-type(2),.work:nth-of-type(3),.work:nth-of-type(4){grid-column:span 1}
+  .work:nth-of-type(5){grid-column:span 2}
+}
+@media(max-width:600px){
+  .works{grid-template-columns:1fr}
+  .work:nth-of-type(5){grid-column:span 1}
+}
+.w-info{flex:1;display:flex;flex-direction:column;justify-content:space-between}
+.work .frame{background:var(--surface-2);border:1px solid var(--line);display:grid;place-items:center;transition:border-color .25s;position:relative;overflow:hidden}
 .work .frame.h{aspect-ratio:16/9}
 .work .frame.v{aspect-ratio:9/16}
 .work:hover .frame{border-color:var(--sage)}
 .work .frame em{font-family:var(--mono);font-size:10px;color:#4F4F4F;letter-spacing:.06em;font-style:normal}
-.work h4{font-family:var(--display);font-size:18px;font-weight:600;margin:14px 0 5px;line-height:1.2;letter-spacing:-.02em}
+.work h4{font-family:var(--display);font-size:18px;font-weight:600;margin:14px 0 5px;line-height:1.2;letter-spacing:-.02em;display:-webkit-box;-webkit-line-clamp:2;line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.4em}
 .work:hover h4{color:var(--sage)}
 .work .w-meta{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin:0 0 8px}
 .work .w-prem{font-size:13.5px;color:var(--muted);margin:0;line-height:1.45}
@@ -250,15 +263,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       <h2 class="sec-h">Peças de pós-produção</h2>
       <p class="sec-sub">O Renascimento do Brasil apresenta a tese das Onças Brasileiras, estados brasileiros que cresceram, em média, acima da China nos últimos anos.</p>
 
-      <button class="reel">
-        <div class="reel-frame">
-          <div class="big-play">▶</div>
+      <div class="reel" style="cursor:default">
+        <div class="reel-frame" style="overflow:hidden">
+          <video src="https://res.cloudinary.com/sv42uiuu/video/upload/v1786923563/renascimento.mp4" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;"></video>
         </div>
         <div class="reel-bar">
           <strong>O Renascimento do Brasil</strong>
           <span>MONTAGEM · MOTION · COLOR · TRILHA</span>
         </div>
-      </button>
+      </div>
 
       <p class="sub-lbl">Peças sociais</p>
       <div class="grid-v" id="grid-ig"></div>
@@ -450,12 +463,7 @@ function closeModal(){
   mmedia.innerHTML='';if(lastFocus)lastFocus.focus();
 }
 
-document.querySelector('.reel').addEventListener('click',()=>{
-  mtitle.textContent='Reel 2026';mcli.textContent='';mbox.classList.remove('vert');
-  mmedia.innerHTML='<div style="padding:80px 24px;font-family:monospace;font-size:11px;color:#6B6B6B;text-align:center">reel ainda não produzido</div>';
-  mlink.style.display='none';mnote.textContent='';
-  modal.classList.add('open');document.body.classList.add('locked');
-});
+
 document.getElementById('mclose').addEventListener('click',closeModal);
 modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
@@ -463,11 +471,19 @@ addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('op
 fetch('videos.json').then(r=>r.json()).then(d=>{
   const gig=document.getElementById('grid-ig'), gyt=document.getElementById('grid-yt'), gmu=document.getElementById('grid-mu');
   
-  if(gig&&d.ig) gig.innerHTML=d.ig.map(v=>`<div class="piece" data-t="ig" data-u="${v.u}" data-video="${v.video}" data-n="${v.n}" data-c="${v.c}"><div class="thumb v" style="padding:0;background:transparent;"><a href="${v.u}" target="_blank" class="ext-link" title="Abrir no Instagram" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.piece')); event.stopPropagation();">⛶</button><video src="${v.video}" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;" onclick="event.stopPropagation()"></video></div><p class="p-title">${v.n}</p><p class="p-meta">${v.c}</p><div class="tags">${v.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`).join('');
+  if(gig&&d.ig) gig.innerHTML=d.ig.map(v=>{
+    const isVid=!!v.video;
+    const media=isVid?`<video src="${v.video}" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;" onclick="event.stopPropagation()"></video>`:`<iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe>`;
+    return `<div class="piece" data-t="${isVid?'ig':'yt'}" data-u="${v.u}" ${isVid?'data-video="'+v.video+'"':''} data-n="${v.n}" data-c="${v.c}"><div class="thumb v" style="padding:0;background:transparent;"><a href="${isVid?v.u:'https://youtu.be/'+v.u}" target="_blank" class="ext-link" title="Abrir link externo" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.piece')); event.stopPropagation();">⛶</button>${media}</div><div class="p-info"><div><p class="p-title">${v.n}</p><p class="p-meta">${v.c}</p></div><div class="tags">${v.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div></div>`;
+  }).join('');
   
-  if(gyt&&d.yt) gyt.innerHTML=d.yt.map(v=>`<div class="piece" data-t="yt" data-u="${v.u}" data-n="${v.n}" data-c="${v.c}"><div class="thumb h" style="padding:0;background:transparent;"><a href="https://youtu.be/${v.u}" target="_blank" class="ext-link" title="Abrir no YouTube" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.piece')); event.stopPropagation();">⛶</button><iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe></div><p class="p-title">${v.n}</p><p class="p-meta">${v.c}</p><div class="tags">${v.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div>`).join('');
+  if(gyt&&d.yt) gyt.innerHTML=d.yt.map(v=>`<div class="piece" data-t="yt" data-u="${v.u}" data-n="${v.n}" data-c="${v.c}"><div class="thumb h" style="padding:0;background:transparent;"><a href="https://youtu.be/${v.u}" target="_blank" class="ext-link" title="Abrir no YouTube" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.piece')); event.stopPropagation();">⛶</button><iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe></div><div class="p-info"><div><p class="p-title">${v.n}</p><p class="p-meta">${v.c}</p></div><div class="tags">${v.tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div></div></div>`).join('');
   
-  if(gmu&&d.mu) gmu.innerHTML=d.mu.map(v=>`<div class="work" data-t="${v.t}" data-u="${v.u}" ${v.video?'data-video="'+v.video+'"':''} data-n="${v.n}" data-c="${v.c}"><div class="frame ${v.t==='ig'?'v':'h'}" style="padding:0;background:transparent;"><a href="${v.t==='ig'?v.u:'https://youtu.be/'+v.u}" target="_blank" class="ext-link" title="Abrir link externo" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.work')); event.stopPropagation();">⛶</button>${v.t==='ig'?`<video src="${v.video}" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;" onclick="event.stopPropagation()"></video>`:`<iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe>`}</div><h4>${v.n}</h4><p class="w-meta">${v.c}</p><p class="w-prem">${v.prem}</p></div>`).join('');
+  if(gmu&&d.mu) gmu.innerHTML=d.mu.map(v=>{
+    const isVid=!!v.video;
+    const media=isVid?`<video src="${v.video}" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;" onclick="event.stopPropagation()"></video>`:`<iframe src="https://www.youtube-nocookie.com/embed/${v.u}?rel=0" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;display:block;"></iframe>`;
+    return `<div class="work" data-t="${isVid?'ig':'yt'}" data-u="${v.u}" ${isVid?'data-video="'+v.video+'"':''} data-n="${v.n}" data-c="${v.c}"><div class="frame h" style="padding:0;background:transparent;"><a href="${isVid?v.u:'https://youtu.be/'+v.u}" target="_blank" class="ext-link" title="Abrir link externo" onclick="event.stopPropagation()">↗</a><button class="expand-btn" title="Assistir no modal" onclick="openModal(this.closest('.work')); event.stopPropagation();">⛶</button>${media}</div><div class="w-info"><div><h4>${v.n}</h4><p class="w-meta">${v.c}</p></div><p class="w-prem">${v.prem}</p></div></div>`;
+  }).join('');
 });
 </script>
 </body>

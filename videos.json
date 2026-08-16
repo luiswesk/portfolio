@@ -1,64 +1,53 @@
 {
   "ig": [
     {
-      "u": "https://www.instagram.com/p/DYH0a2dJvOB/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
-      "n": "Renascimento do Brasil",
-      "c": "Apex Partners · 2026",
-      "tags": ["montagem", "motion", "color", "áudio"]
-    },
-    {
       "u": "https://www.instagram.com/p/C77DExWumgV/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "video": "https://res.cloudinary.com/sv42uiuu/video/upload/v1786922844/anacastela.mp4",
       "n": "Gusttavo Lima, Ana Castela e o agro",
       "c": "Ricardo Frizera · 2024",
       "tags": ["montagem", "motion", "color", "áudio"]
     },
     {
       "u": "https://www.instagram.com/reel/C5eeASYvbB2/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "video": "https://res.cloudinary.com/sv42uiuu/video/upload/v1786922843/jeanscolatina.mp4",
       "n": "A capital do jeans é capixaba!",
       "c": "Ricardo Frizera · 2024",
       "tags": ["montagem", "motion", "color", "áudio"]
     },
     {
       "u": "https://www.instagram.com/p/DbjbwnaoUfD/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "video": "https://res.cloudinary.com/sv42uiuu/video/upload/v1786922842/cicloviaurbana.mp4",
       "n": "A maior ciclovia urbana do Brasil",
       "c": "Ricardo Frizera · 2026",
       "tags": ["montagem", "motion", "color", "áudio"]
     },
     {
       "u": "https://www.instagram.com/p/C5MQ0aLvAeF/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "video": "https://res.cloudinary.com/sv42uiuu/video/upload/v1786922844/biolum.mp4",
       "n": "Você viu a bioluminescência em Vitória?",
       "c": "Ricardo Frizera · 2024",
       "tags": ["montagem", "motion", "color", "áudio"]
     },
     {
-      "u": "https://www.instagram.com/reel/DbROwnuPvei/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "u": "k8UqNsV5T-g",
       "n": "O que são grãos sonoros?",
       "c": "Criamus · 2026",
       "tags": ["roteiro", "captação", "montagem", "motion", "trilha"]
     },
     {
-      "u": "https://www.instagram.com/reel/DXCsOewib8X/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "u": "RxU2wQypzkM",
       "n": "Envelope ADSR",
       "c": "Criamus · 2026",
       "tags": ["roteiro", "captação", "montagem", "motion", "trilha"]
     },
     {
-      "u": "https://www.instagram.com/reel/DVohYb-gAz6/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "u": "XjXYYS-AKV0",
       "n": "O que é o som?",
       "c": "Criamus · 2026",
       "tags": ["roteiro", "captação", "montagem", "motion", "trilha"]
     },
     {
-      "u": "https://www.instagram.com/reel/DV6Un6YgNCl/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
+      "u": "J27arS-Y_gA",
       "n": "O que é o timbre?",
       "c": "Criamus · 2026",
       "tags": ["roteiro", "captação", "montagem", "motion", "trilha"]
@@ -80,6 +69,20 @@
   ],
   "mu": [
     {
+      "u": "https://www.instagram.com/reel/Csj_VNHsgzJ/",
+      "video": "https://res.cloudinary.com/sv42uiuu/video/upload/v1786923929/marinho.mp4",
+      "n": "Marinho",
+      "c": "2023 · trilha original",
+      "prem": "Documentário sobre o rio Marinho e a memória de seus antigos moradores."
+    },
+    {
+      "u": "https://www.instagram.com/p/DUD0JMIDSSh/",
+      "video": "https://res.cloudinary.com/sv42uiuu/video/upload/v1786923784/performancecips.mp4",
+      "n": "Performance — IV CIPS",
+      "c": "2025 · performance",
+      "prem": "Peças de Henrique Iwao, teatro universitário da UFES."
+    },
+    {
       "t": "yt",
       "u": "kPoIunhD8QY",
       "n": "Luzes de Plástico",
@@ -99,29 +102,6 @@
       "n": "Fragmentos",
       "c": "2024 · Flauta e Sax Alto",
       "prem": "XXXI Panorama da Música Brasileira Atual — Salão Leopoldo Miguez, UFRJ."
-    },
-    {
-      "t": "yt",
-      "u": "vLxmWHPzMck",
-      "n": "Tango ao Luar",
-      "c": "2023 · VIX Ensemble",
-      "prem": "Festival Escuta Aqui! — 5ª edição, auditório da Fames."
-    },
-    {
-      "t": "ig",
-      "u": "https://www.instagram.com/reel/Csj_VNHsgzJ/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
-      "n": "Marinho",
-      "c": "2023 · trilha original",
-      "prem": "Documentário sobre o rio Marinho e a memória de seus antigos moradores."
-    },
-    {
-      "t": "ig",
-      "u": "https://www.instagram.com/p/DUD0JMIDSSh/",
-      "video": "URL_DO_VIDEO_NO_CLOUDINARY.mp4",
-      "n": "Performance — IV CIPS",
-      "c": "2025 · performance",
-      "prem": "Peças de Henrique Iwao, teatro universitário da UFES."
     }
   ]
 }
