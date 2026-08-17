@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Luis Wesk — Editor de vídeo, compositor</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<meta name="description" content="Luis Wesk — Editor de vídeo e compositor. Pós-produção completa, motion, color, trilha sonora e projetos audiovisuais.">
+<meta name="keywords" content="editor de vídeo, compositor, pós-produção, trilha sonora, audiovisual">
+<meta name="author" content="Luis Wesk">
+<meta property="og:title" content="Luis Wesk — Editor de vídeo, compositor">
+<meta property="og:description" content="Luis Wesk — Editor de vídeo e compositor. Pós-produção completa, motion, color, trilha sonora e projetos audiovisuais.">
+<meta property="og:url" content="https://luiswesk.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Instrument+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
@@ -25,8 +34,6 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:var(--body);fon
 body.locked{overflow:hidden}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--clay);outline-offset:3px}
-.draft{position:fixed;bottom:0;left:0;right:0;z-index:120;background:var(--clay);color:#fff;
-  font-family:var(--mono);font-size:10.5px;letter-spacing:.04em;padding:7px 16px;text-align:center}
 
 .nav{position:fixed;top:0;left:0;right:0;z-index:60;display:flex;align-items:center;gap:28px;
   padding:20px 40px;border-bottom:1px solid transparent;transition:background .3s,border-color .3s}
@@ -52,7 +59,6 @@ section+section{border-top:1px solid var(--line)}
 .hero{min-height:88vh;display:flex;align-items:center;position:relative;overflow:hidden;padding:120px 0 88px}
 .hero-bg{position:absolute;inset:0}
 .hero-video{width:100%;height:100vh;object-fit:cover;display:block;will-change:transform;transform:translateZ(0)}
-/* .hero-overlay{position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(to top, var(--bg) 0%, rgba(22,22,22,0.4) 60%, rgba(22,22,22,0) 100%)} */
 
 .hero .wrap{position:relative;width:100%;display:flex;flex-direction:column;align-items:center;text-align:center}
 .hero h1{font-family:var(--display);font-weight:800;letter-spacing:-.04em;line-height:.9;
@@ -228,7 +234,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
       <video autoplay muted loop playsinline class="hero-video" aria-hidden="true">
         <source src="assets/bg.mp4" type="video/mp4">
       </video>
-      <div class="hero-overlay"></div>
     </div>
     <div class="wrap">
       <h1>Luis<br>Wesk</h1>
@@ -393,7 +398,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <footer>
   <div class="wrap">
     <span>© 2026 Luis Wesk</span>
-    <span data-i18n="footer_dev">Desenvolvimento: João Moura</span>
     <span><a href="#top" style="text-decoration:none" data-i18n="footer_top">Topo ↑</a></span>
   </div>
 </footer>
@@ -411,8 +415,6 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     </div>
   </div>
 </div>
-
-<div class="draft">RASCUNHO v1.0 — Darkmode On ativa · etiquetas por ofício · cases fora do escopo</div>
 
 <script>
 function moveCar(id, dir){
