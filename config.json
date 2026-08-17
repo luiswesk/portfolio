@@ -39,6 +39,7 @@
   "proj2_yr": { "pt": "Maio 2024 — atual · em desenvolvimento", "en": "May 2024 — current · in development" },
   "proj2_prob": { "pt": "Estamos criando um ecossistema educacional de criação artística.", "en": "We are creating an educational ecosystem for artistic creation." },
   "proj2_tags": { "pt": "<span class=\"tag\">especificação</span><span class=\"tag\">editorial</span><span class=\"tag\">produto educacional</span>", "en": "<span class=\"tag\">specification</span><span class=\"tag\">editorial</span><span class=\"tag\">educational product</span>" },
+  "proj2_link": { "pt": "Acessar site ↗", "en": "Visit website ↗" },
   
   "sec3_eyebrow": { "pt": "03 — Música", "en": "03 — Music" },
   "sec3_h": { "pt": "Composição", "en": "Composition" },
