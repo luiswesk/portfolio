@@ -112,7 +112,7 @@ section+section{border-top:1px solid var(--line)}
 
 .projs{display:grid;gap:80px}
 .proj{display:grid;grid-template-columns:1fr 1.1fr;background:var(--bg);border:1px solid var(--line);overflow:hidden}
-.proj .shot{background:var(--surface-2);display:grid;place-items:center;position:relative;aspect-ratio:16/9}
+.proj .shot{display:grid;place-items:center;position:relative;align-self:center;padding-left:56px}
 .proj .shot em{font-family:var(--mono);font-size:10px;color:#4F4F4F;letter-spacing:.06em;text-align:center;font-style:normal;padding:0 12px}
 .proj .body{padding:64px 56px;display:flex;flex-direction:column;justify-content:center}
 .proj .yr{font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.12em;margin:0 0 16px;text-transform:uppercase}
@@ -123,11 +123,11 @@ section+section{border-top:1px solid var(--line)}
 .proj-topics li.active{opacity:1;transform:translateY(0);pointer-events:auto;visibility:visible}
 .proj-topics li::before{content:'—';color:var(--clay)}
 
-.carousel-wrap{position:relative;width:100%;height:100%}
-.carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;width:100%;height:100%;position:absolute;inset:0}
+.carousel-wrap{position:relative;width:100%}
+.carousel{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;-ms-overflow-style:none;width:100%}
 .carousel::-webkit-scrollbar{display:none}
-.carousel-slide{flex:0 0 100%;width:100%;height:100%;scroll-snap-align:start;display:grid;place-items:center;background:var(--surface-2)}
-.carousel-slide img{width:100%;height:100%;object-fit:cover;display:block}
+.carousel-slide{flex:0 0 100%;width:100%;scroll-snap-align:start;display:grid;place-items:center}
+.carousel-slide img{width:100%;height:auto;display:block;cursor:zoom-in}
 .car-nav{position:absolute;inset:0;pointer-events:none;display:flex;align-items:center;justify-content:space-between;padding:0 16px}
 .car-btn{pointer-events:auto;background:rgba(22,22,22,.6);backdrop-filter:blur(4px);border:1px solid var(--line);color:var(--text);width:36px;height:36px;display:flex;align-items:center;justify-content:center;cursor:pointer;border-radius:50%;transition:.2s;font-family:var(--mono)}
 .car-btn:hover{background:var(--text);color:var(--bg)}
@@ -135,7 +135,7 @@ section+section{border-top:1px solid var(--line)}
 .car-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.2);transition:.2s}
 .car-dot.active{background:var(--clay);transform:scale(1.2)}
 
-@media(max-width:900px){.proj{grid-template-columns:1fr}.proj .shot{aspect-ratio:16/9}.proj .body{padding:40px 32px}}
+@media(max-width:900px){.proj{grid-template-columns:1fr}.proj .shot{padding:0}.proj .body{padding:40px 32px}}
 
 #musica .eyebrow{color:var(--sage)}
 .artist{font-family:var(--mono);font-size:10.5px;color:var(--sage);letter-spacing:.14em;text-transform:uppercase;margin:-52px 0 64px}
@@ -290,10 +290,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
         <div class="proj">
           <div class="shot carousel-wrap">
             <div class="carousel" id="copilot-car">
-              <div class="carousel-slide"><img src="assets/slide-1.jpg" alt="Ingestão automatizada"></div>
-              <div class="carousel-slide"><img src="assets/slide-2.jpg" alt="Análise por IA"></div>
-              <div class="carousel-slide"><img src="assets/slide-3.jpg" alt="Busca de assets"></div>
-              <div class="carousel-slide"><img src="assets/slide-4.jpg" alt="Geolocalização"></div>
+              <div class="carousel-slide"><img src="https://res.cloudinary.com/sv42uiuu/image/upload/v1786918707/ingestaotab.png" alt="Ingestão automatizada" onclick="openImgModal(this)" title="Ampliar imagem"></div>
+              <div class="carousel-slide"><img src="https://res.cloudinary.com/sv42uiuu/image/upload/v1786918706/analisetab.png" alt="Análise por IA" onclick="openImgModal(this)" title="Ampliar imagem"></div>
+              <div class="carousel-slide"><img src="https://res.cloudinary.com/sv42uiuu/image/upload/v1786918707/searchtab.png" alt="Busca de assets" onclick="openImgModal(this)" title="Ampliar imagem"></div>
+              <div class="carousel-slide"><img src="https://res.cloudinary.com/sv42uiuu/image/upload/v1786918707/maptab.png" alt="Geolocalização" onclick="openImgModal(this)" title="Ampliar imagem"></div>
             </div>
             <div class="car-nav">
               <button class="car-btn prev" aria-label="Anterior" onclick="moveCar('copilot-car', -1)">←</button>
@@ -455,6 +455,16 @@ function openModal(btn){
     mlink.style.display='';mlink.href=u;mlink.textContent='Abrir no Instagram ↗';
     mnote.textContent='';
   }
+  modal.classList.add('open');document.body.classList.add('locked');
+  document.getElementById('mclose').focus();
+}
+
+function openImgModal(img){
+  lastFocus=img;
+  mtitle.textContent=img.alt||'Imagem';mcli.textContent='Visual Copilot';
+  mbox.classList.remove('vert');
+  mmedia.innerHTML='<img src="'+img.src+'" style="max-height:80vh;max-width:100%;display:block;margin:0 auto;border-radius:4px">';
+  mlink.style.display='none';mnote.textContent='';
   modal.classList.add('open');document.body.classList.add('locked');
   document.getElementById('mclose').focus();
 }
