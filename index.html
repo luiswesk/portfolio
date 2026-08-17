@@ -210,15 +210,15 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <body>
 
 <nav class="nav" id="nav">
-  <a href="#top" class="brand">LUIS WESK</a>
+  <a href="#top" class="brand" data-i18n="brand">LUIS WESK</a>
   <ul>
-    <li><a class="lnk" href="#trabalhos">Trabalhos</a></li>
-    <li><a class="lnk" href="#projetos">Projetos</a></li>
-    <li><a class="lnk" href="#musica">Música</a></li>
-    <li><a class="lnk" href="#sobre">Sobre</a></li>
-    <li><a class="lnk" href="#contato">Contato</a></li>
+    <li><a class="lnk" href="#trabalhos" data-i18n="nav_trabalhos">Trabalhos</a></li>
+    <li><a class="lnk" href="#projetos" data-i18n="nav_projetos">Projetos</a></li>
+    <li><a class="lnk" href="#musica" data-i18n="nav_musica">Música</a></li>
+    <li><a class="lnk" href="#sobre" data-i18n="nav_sobre">Sobre</a></li>
+    <li><a class="lnk" href="#contato" data-i18n="nav_contato">Contato</a></li>
   </ul>
-  <span class="lang"><b>PT</b> / EN</span>
+  <button id="lang-toggle" class="lang" aria-label="Alterar idioma" style="cursor:pointer;background:none;border:none;padding:0"><b>PT</b> / EN</button>
 </nav>
 
 <main id="top">
@@ -232,10 +232,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     </div>
     <div class="wrap">
       <h1>Luis<br>Wesk</h1>
-      <p class="roles">Editor de vídeo &nbsp;·&nbsp; Compositor</p>
+      <p class="roles" data-i18n="hero_roles">Editor de vídeo &nbsp;·&nbsp; Compositor</p>
       <div class="btns">
-        <a class="btn" href="#trabalhos">Ver trabalhos</a>
-        <a class="btn ghost" href="#projetos">Ver projetos</a>
+        <a class="btn" href="#trabalhos" data-i18n="btn_trabalhos">Ver trabalhos</a>
+        <a class="btn ghost" href="#projetos" data-i18n="btn_projetos">Ver projetos</a>
       </div>
     </div>
   </section>
@@ -244,14 +244,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
     <div class="wrap">
       <div class="trilhas">
         <a class="trilha" href="#trabalhos">
-          <h3>Trabalhos de edição</h3>
-          <p>Pós-produção completa — montagem, motion, color e trilha.</p>
-          <span class="go">Confira →</span>
+          <h3 data-i18n="trilha_edicao_h">Trabalhos de edição</h3>
+          <p data-i18n="trilha_edicao_p">Pós-produção completa — montagem, motion, color e trilha.</p>
+          <span class="go" data-i18n="trilha_confira">Confira →</span>
         </a>
         <a class="trilha" href="#projetos">
-          <h3>Projetos</h3>
-          <p>Ferramentas para audiovisual e ensino — concepção, especificação e arquitetura.</p>
-          <span class="go">Confira →</span>
+          <h3 data-i18n="trilha_proj_h">Projetos</h3>
+          <p data-i18n="trilha_proj_p">Ferramentas para audiovisual e ensino — concepção, especificação e arquitetura.</p>
+          <span class="go" data-i18n="trilha_confira2">Confira →</span>
         </a>
       </div>
     </div>
@@ -259,24 +259,24 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 
   <section id="trabalhos">
     <div class="wrap">
-      <p class="eyebrow">01 — Trabalhos</p>
-      <h2 class="sec-h">Peças de pós-produção</h2>
-      <p class="sec-sub">O Renascimento do Brasil apresenta a tese das Onças Brasileiras, estados brasileiros que cresceram, em média, acima da China nos últimos anos.</p>
+      <p class="eyebrow" data-i18n="sec1_eyebrow">01 — Trabalhos</p>
+      <h2 class="sec-h" data-i18n="sec1_h">Peças de pós-produção</h2>
+      <p class="sec-sub" data-i18n="sec1_sub">O Renascimento do Brasil apresenta a tese das Onças Brasileiras, estados brasileiros que cresceram, em média, acima da China nos últimos anos.</p>
 
       <div class="reel" style="cursor:default">
         <div class="reel-frame" style="overflow:hidden">
           <video src="https://res.cloudinary.com/sv42uiuu/video/upload/v1786923563/renascimento.mp4" playsinline controls preload="metadata" style="width:100%;height:100%;object-fit:cover;display:block;"></video>
         </div>
         <div class="reel-bar">
-          <strong>O Renascimento do Brasil</strong>
-          <span>MONTAGEM · MOTION · COLOR · TRILHA</span>
+          <strong data-i18n="sec1_reel_h">O Renascimento do Brasil</strong>
+          <span data-i18n="sec1_reel_p">MONTAGEM · MOTION · COLOR · TRILHA</span>
         </div>
       </div>
 
-      <p class="sub-lbl">Peças sociais</p>
+      <p class="sub-lbl" data-i18n="sec1_lbl_sociais">Peças sociais</p>
       <div class="grid-v" id="grid-ig"></div>
 
-      <p class="sub-lbl">Vídeos longos</p>
+      <p class="sub-lbl" data-i18n="sec1_lbl_longos">Vídeos longos</p>
       <div class="grid-h" id="grid-yt"></div>
 
     </div>
@@ -284,8 +284,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 
   <section id="projetos">
     <div class="wrap">
-      <p class="eyebrow">02 — Projetos</p>
-      <h2 class="sec-h">Projetos realizados</h2>
+      <p class="eyebrow" data-i18n="sec2_eyebrow">02 — Projetos</p>
+      <h2 class="sec-h" data-i18n="sec2_h">Projetos realizados</h2>
       <div class="projs">
         <div class="proj">
           <div class="shot carousel-wrap">
@@ -307,16 +307,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
             </div>
           </div>
           <div class="body">
-            <p class="yr">Set 2025 — em andamento · protótipo funcional</p>
+            <p class="yr" data-i18n="proj1_yr">Set 2025 — em andamento · protótipo funcional</p>
             <h3>Visual Copilot</h3>
-            <p class="prob">Concepção de software de gestão de acervo audiovisual: especificação de escopo, fluxo e arquitetura do sistema.</p>
+            <p class="prob" data-i18n="proj1_prob">Concepção de software de gestão de acervo audiovisual: especificação de escopo, fluxo e arquitetura do sistema.</p>
             <ul class="proj-topics" id="copilot-text">
-              <li class="active"><span>Ingestão automatizada de arquivos com criação de estrutura de pastas e renomeação individual por padrão definido.</span></li>
-              <li><span>Análise por IA: extração de frames por take, interpretação de conteúdo e tagueamento automático a partir de contexto fornecido.</span></li>
-              <li><span>Busca de assets por tags, metadados e similaridade, com taxonomia própria de classificação.</span></li>
-              <li><span>Geolocalização de takes de drone com extração de coordenadas e visualização em mapa.</span></li>
+              <li class="active"><span data-i18n="proj1_t1">Ingestão automatizada de arquivos com criação de estrutura de pastas e renomeação individual por padrão definido.</span></li>
+              <li><span data-i18n="proj1_t2">Análise por IA: extração de frames por take, interpretação de conteúdo e tagueamento automático a partir de contexto fornecido.</span></li>
+              <li><span data-i18n="proj1_t3">Busca de assets por tags, metadados e similaridade, com taxonomia própria de classificação.</span></li>
+              <li><span data-i18n="proj1_t4">Geolocalização de takes de drone com extração de coordenadas e visualização em mapa.</span></li>
             </ul>
-            <div class="tags"><span class="tag">concepção</span><span class="tag">arquitetura</span><span class="tag">visão computacional</span><span class="tag">LLM</span></div>
+            <div class="tags" data-i18n="proj1_tags"><span class="tag">concepção</span><span class="tag">arquitetura</span><span class="tag">visão computacional</span><span class="tag">LLM</span></div>
           </div>
         </div>
         <div class="proj">
@@ -325,10 +325,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
             <em>MOCKUP<br>Criamus</em>
           </div>
           <div class="body">
-            <p class="yr">Maio 2024 — atual · em desenvolvimento</p>
+            <p class="yr" data-i18n="proj2_yr">Maio 2024 — atual · em desenvolvimento</p>
             <h3>Criamus</h3>
-            <p class="prob">Estamos criando um ecossistema educacional de criação artística.</p>
-            <div class="tags"><span class="tag">especificação</span><span class="tag">editorial</span><span class="tag">produto educacional</span></div>
+            <p class="prob" data-i18n="proj2_prob">Estamos criando um ecossistema educacional de criação artística.</p>
+            <div class="tags" data-i18n="proj2_tags"><span class="tag">especificação</span><span class="tag">editorial</span><span class="tag">produto educacional</span></div>
           </div>
         </div>
       </div>
@@ -337,13 +337,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 
   <section id="musica">
     <div class="wrap">
-      <p class="eyebrow">03 — Música</p>
-      <h2 class="sec-h">Composição</h2>
-      <p class="sec-sub">Obras de concerto, eletroacústica e trilha musical.
+      <p class="eyebrow" data-i18n="sec3_eyebrow">03 — Música</p>
+      <h2 class="sec-h" data-i18n="sec3_h">Composição</h2>
+      <p class="sec-sub" data-i18n="sec3_sub">Obras de concerto, eletroacústica e trilha musical.</p>
 
       <div class="works" id="grid-mu"></div>
 
-      <p class="shows-h">Apresentações</p>
+      <p class="shows-h" data-i18n="sec3_shows">Apresentações</p>
       <div class="show"><span class="d">JUN 2025</span><span>IV Conferência Internacional de Pesquisa em Sonoridades — peças de Henrique Iwao, UFES</span></div>
       <div class="show"><span class="d">OUT 2024</span><span><i>Fragmentos</i> — XXXI Panorama da Música Brasileira Atual, UFRJ</span></div>
       <div class="show"><span class="d">SET 2024</span><span><i>Flying Theremin</i> — VIX Ensemble, Festival Escuta Aqui! 6ª edição</span></div>
@@ -354,17 +354,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 
   <section id="sobre">
     <div class="wrap">
-      <p class="eyebrow">04 — Sobre</p>
+      <p class="eyebrow" data-i18n="sec4_eyebrow">04 — Sobre</p>
       <div class="about">
         <div>
-          <p class="about-lead">Composição na arte, no audiovisual e nos projetos.</p>
-          <p>Sou um profissional criativo, com um olhar multidisciplinar. Há cinco anos atuo em pós-produção — montagem, motion, color e finalização — em conteúdo digital, comunicação institucional e cobertura de eventos.</p>
-          <p>Nos últimos anos, passei a construir também novos projetos, explorando estudos na área da tecnologia e do empreendedorismo.</p>
+          <p class="about-lead" data-i18n="sec4_lead">Composição na arte, no audiovisual e nos projetos.</p>
+          <p data-i18n="sec4_p1">Sou um profissional criativo, com um olhar multidisciplinar. Há cinco anos atuo em pós-produção — montagem, motion, color e finalização — em conteúdo digital, comunicação institucional e cobertura de eventos.</p>
+          <p data-i18n="sec4_p2">Nos últimos anos, passei a construir também novos projetos, explorando estudos na área da tecnologia e do empreendedorismo.</p>
           <div class="edu">
-            <div><b>Bacharelado em Música</b> — Composição, ênfase em Trilha Musical · UFES · 2021–2025</div>
-            <div><b>Técnico em Eletromecânica</b> — IFES · 2016–2019</div>
+            <div data-i18n="sec4_edu1"><b>Bacharelado em Música</b> — Composição, ênfase em Trilha Musical · UFES · 2021–2025</div>
+            <div data-i18n="sec4_edu2"><b>Técnico em Eletromecânica</b> — IFES · 2016–2019</div>
           </div>
-          <div style="margin-top:32px"><a class="btn ghost" href="/curriculo.pdf">Baixar currículo (PDF)</a></div>
+          <div style="margin-top:32px"><a class="btn ghost" href="/curriculo.pdf" data-i18n="sec4_cv">Baixar currículo (PDF)</a></div>
         </div>
         <div class="skills">
           <div class="skill-g"><h4>Pós-produção</h4><p>Premiere Pro · After Effects · Photoshop · Illustrator</p></div>
@@ -378,7 +378,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 
   <section id="contato">
     <div class="wrap">
-      <p class="eyebrow">05 — Contato</p>
+      <p class="eyebrow" data-i18n="sec5_eyebrow">05 — Contato</p>
       <a class="big-mail" href="mailto:luisgustavowf@hotmail.com">luisgustavowf@hotmail.com</a>
       <div class="contact">
         <a href="#">LinkedIn ↗</a>
@@ -393,8 +393,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;
 <footer>
   <div class="wrap">
     <span>© 2026 Luis Wesk</span>
-    <span>Desenvolvimento: João Moura</span>
-    <span><a href="#top" style="text-decoration:none">Topo ↑</a></span>
+    <span data-i18n="footer_dev">Desenvolvimento: João Moura</span>
+    <span><a href="#top" style="text-decoration:none" data-i18n="footer_top">Topo ↑</a></span>
   </div>
 </footer>
 
@@ -441,6 +441,26 @@ const modal=document.getElementById('modal'),mbox=document.getElementById('mbox'
       mcli=document.getElementById('mcli'),mlink=document.getElementById('mlink'),
       mnote=document.getElementById('mnote');
 let lastFocus=null;
+let i18nDict={};
+let currentLang=localStorage.getItem('luis-lang')||'pt';
+
+function setLanguage(lang) {
+  currentLang=lang;
+  localStorage.setItem('luis-lang',lang);
+  document.documentElement.lang=lang;
+  const toggleBtn=document.getElementById('lang-toggle');
+  if(toggleBtn) toggleBtn.innerHTML=lang==='pt'?'<b>PT</b> / EN':'PT / <b>EN</b>';
+  document.querySelectorAll('[data-i18n]').forEach(el=>{
+    const k=el.getAttribute('data-i18n');
+    if(i18nDict[k]&&i18nDict[k][lang]) el.innerHTML=i18nDict[k][lang];
+  });
+}
+
+fetch('config.json').then(r=>r.json()).then(d=>{
+  i18nDict=d;
+  setLanguage(currentLang);
+  document.getElementById('lang-toggle').addEventListener('click',()=>setLanguage(currentLang==='pt'?'en':'pt'));
+});
 function openModal(btn){
   lastFocus=btn;
   const t=btn.dataset.t,u=btn.dataset.u;
@@ -449,10 +469,10 @@ function openModal(btn){
   if(t==='yt'){
     mmedia.innerHTML='<iframe style="aspect-ratio:16/9" src="https://www.youtube-nocookie.com/embed/'+u+
       '?rel=0" title="'+btn.dataset.n+'" allow="accelerometer;autoplay;encrypted-media;picture-in-picture" allowfullscreen></iframe>';
-    mlink.style.display='';mlink.href='https://youtu.be/'+u;mlink.textContent='Ver no YouTube ↗';mnote.textContent='';
+    mlink.style.display='';mlink.href='https://youtu.be/'+u;mlink.textContent=i18nDict['modal_yt']?.[currentLang]||'Ver no YouTube ↗';mnote.textContent='';
   }else{
     mmedia.innerHTML='<video src="'+btn.dataset.video+'" controls autoplay playsinline style="max-height:75vh; max-width:100%; border-radius:4px;"></video>';
-    mlink.style.display='';mlink.href=u;mlink.textContent='Abrir no Instagram ↗';
+    mlink.style.display='';mlink.href=u;mlink.textContent=i18nDict['modal_ig']?.[currentLang]||'Abrir no Instagram ↗';
     mnote.textContent='';
   }
   modal.classList.add('open');document.body.classList.add('locked');
@@ -461,7 +481,7 @@ function openModal(btn){
 
 function openImgModal(img){
   lastFocus=img;
-  mtitle.textContent=img.alt||'Imagem';mcli.textContent='Visual Copilot';
+  mtitle.textContent=img.alt||(currentLang==='pt'?'Imagem':'Image');mcli.textContent='Visual Copilot';
   mbox.classList.remove('vert');
   mmedia.innerHTML='<img src="'+img.src+'" style="max-height:80vh;max-width:100%;display:block;margin:0 auto;border-radius:4px">';
   mlink.style.display='none';mnote.textContent='';

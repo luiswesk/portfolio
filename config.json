@@ -1,0 +1,63 @@
+{
+  "nav_trabalhos": { "pt": "Trabalhos", "en": "Works" },
+  "nav_projetos": { "pt": "Projetos", "en": "Projects" },
+  "nav_musica": { "pt": "Música", "en": "Music" },
+  "nav_sobre": { "pt": "Sobre", "en": "About" },
+  "nav_contato": { "pt": "Contato", "en": "Contact" },
+
+  "brand": { "pt": "LUIS WESK", "en": "LUIS WESK" },
+  
+  "hero_roles": { "pt": "Editor de vídeo &nbsp;·&nbsp; Compositor", "en": "Video Editor &nbsp;·&nbsp; Composer" },
+  "btn_trabalhos": { "pt": "Ver trabalhos", "en": "View works" },
+  "btn_projetos": { "pt": "Ver projetos", "en": "View projects" },
+  
+  "trilha_edicao_h": { "pt": "Trabalhos de edição", "en": "Video Editing" },
+  "trilha_edicao_p": { "pt": "Pós-produção completa — montagem, motion, color e trilha.", "en": "Full post-production — editing, motion, color, and soundtrack." },
+  "trilha_proj_h": { "pt": "Projetos", "en": "Projects" },
+  "trilha_proj_p": { "pt": "Ferramentas para audiovisual e ensino — concepção, especificação e arquitetura.", "en": "Tools for audiovisual and education — conception, specification, and architecture." },
+  "trilha_confira": { "pt": "Confira →", "en": "Check out →" },
+  
+  "sec1_eyebrow": { "pt": "01 — Trabalhos", "en": "01 — Works" },
+  "sec1_h": { "pt": "Peças de pós-produção", "en": "Post-production pieces" },
+  "sec1_sub": { "pt": "O Renascimento do Brasil apresenta a tese das Onças Brasileiras, estados brasileiros que cresceram, em média, acima da China nos últimos anos.", "en": "O Renascimento do Brasil presents the thesis of the Brazilian Jaguars, states that have grown, on average, above China in recent years." },
+  "sec1_reel_h": { "pt": "O Renascimento do Brasil", "en": "O Renascimento do Brasil" },
+  "sec1_reel_p": { "pt": "MONTAGEM · MOTION · COLOR · TRILHA", "en": "EDITING · MOTION · COLOR · SOUNDTRACK" },
+  "sec1_lbl_sociais": { "pt": "Peças sociais", "en": "Social media" },
+  "sec1_lbl_longos": { "pt": "Vídeos longos", "en": "Long format videos" },
+  
+  "sec2_eyebrow": { "pt": "02 — Projetos", "en": "02 — Projects" },
+  "sec2_h": { "pt": "Projetos realizados", "en": "Featured Projects" },
+  
+  "proj1_yr": { "pt": "Set 2025 — em andamento · protótipo funcional", "en": "Sep 2025 — ongoing · functional prototype" },
+  "proj1_prob": { "pt": "Concepção de software de gestão de acervo audiovisual: especificação de escopo, fluxo e arquitetura do sistema.", "en": "Conception of audiovisual asset management software: scope specification, flow, and system architecture." },
+  "proj1_t1": { "pt": "Ingestão automatizada de arquivos com criação de estrutura de pastas e renomeação individual por padrão definido.", "en": "Automated file ingestion with folder structure creation and individual renaming by defined standard." },
+  "proj1_t2": { "pt": "Análise por IA: extração de frames por take, interpretação de conteúdo e tagueamento automático a partir de contexto fornecido.", "en": "AI Analysis: frame extraction per take, content interpretation, and automatic tagging based on provided context." },
+  "proj1_t3": { "pt": "Busca de assets por tags, metadados e similaridade, com taxonomia própria de classificação.", "en": "Asset search by tags, metadata, and similarity, with proprietary classification taxonomy." },
+  "proj1_t4": { "pt": "Geolocalização de takes de drone com extração de coordenadas e visualização em mapa.", "en": "Geolocation of drone takes with coordinate extraction and map visualization." },
+  "proj1_tags": { "pt": "<span class=\"tag\">concepção</span><span class=\"tag\">arquitetura</span><span class=\"tag\">visão computacional</span><span class=\"tag\">LLM</span>", "en": "<span class=\"tag\">conception</span><span class=\"tag\">architecture</span><span class=\"tag\">computer vision</span><span class=\"tag\">LLM</span>" },
+  
+  "proj2_yr": { "pt": "Maio 2024 — atual · em desenvolvimento", "en": "May 2024 — current · in development" },
+  "proj2_prob": { "pt": "Estamos criando um ecossistema educacional de criação artística.", "en": "We are creating an educational ecosystem for artistic creation." },
+  "proj2_tags": { "pt": "<span class=\"tag\">especificação</span><span class=\"tag\">editorial</span><span class=\"tag\">produto educacional</span>", "en": "<span class=\"tag\">specification</span><span class=\"tag\">editorial</span><span class=\"tag\">educational product</span>" },
+  
+  "sec3_eyebrow": { "pt": "03 — Música", "en": "03 — Music" },
+  "sec3_h": { "pt": "Composição", "en": "Composition" },
+  "sec3_sub": { "pt": "Obras de concerto, eletroacústica e trilha musical.", "en": "Concert works, electroacoustic music, and soundtracks." },
+  "sec3_shows": { "pt": "Apresentações", "en": "Performances" },
+  
+  "sec4_eyebrow": { "pt": "04 — Sobre", "en": "04 — About" },
+  "sec4_lead": { "pt": "Composição na arte, no audiovisual e nos projetos.", "en": "Composition in art, audiovisual, and projects." },
+  "sec4_p1": { "pt": "Sou um profissional criativo, com um olhar multidisciplinar. Há cinco anos atuo em pós-produção — montagem, motion, color e finalização — em conteúdo digital, comunicação institucional e cobertura de eventos.", "en": "I am a creative professional with a multidisciplinary approach. For five years, I have worked in post-production—editing, motion, color, and finishing—in digital content, corporate communication, and event coverage." },
+  "sec4_p2": { "pt": "Nos últimos anos, passei a construir também novos projetos, explorando estudos na área da tecnologia e do empreendedorismo.", "en": "In recent years, I have also started building new projects, exploring studies in technology and entrepreneurship." },
+  "sec4_edu1": { "pt": "<b>Bacharelado em Música</b> — Composição, ênfase em Trilha Musical · UFES · 2021–2025", "en": "<b>Bachelor of Music</b> — Composition, emphasis in Soundtrack · UFES · 2021–2025" },
+  "sec4_edu2": { "pt": "<b>Técnico em Eletromecânica</b> — IFES · 2016–2019", "en": "<b>Electromechanics Technician</b> — IFES · 2016–2019" },
+  "sec4_cv": { "pt": "Baixar currículo (PDF)", "en": "Download resume (PDF)" },
+  
+  "sec5_eyebrow": { "pt": "05 — Contato", "en": "05 — Contact" },
+  
+  "footer_dev": { "pt": "Desenvolvimento: João Moura", "en": "Developed by: João Moura" },
+  "footer_top": { "pt": "Topo ↑", "en": "Top ↑" },
+
+  "modal_yt": { "pt": "Ver no YouTube ↗", "en": "Watch on YouTube ↗" },
+  "modal_ig": { "pt": "Abrir no Instagram ↗", "en": "Open on Instagram ↗" }
+}
